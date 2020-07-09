@@ -5,6 +5,28 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Dáme bambus?</title>
+  </head>
+  <body style="background-image: url(img/panda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;">
+    <div id="clockdiv">
+  <div>
+    <span class="days"></span>
+    <div class="smalltext">Days</div>
+  </div>
+  <div>
+    <span class="hours"></span>
+    <div class="smalltext">Hours</div>
+  </div>
+  <div>
+    <span class="minutes"></span>
+    <div class="smalltext">Minutes</div>
+  </div>
+  <div>
+    <span class="seconds"></span>
+    <div class="smalltext">Seconds</div>
+  </div>
+</div>
     <script>
       function getTimeRemaining(endtime) {
   const total = Date.parse(endtime) - Date.parse(new Date());
@@ -49,27 +71,5 @@ function initializeClock(id, endtime) {
 const deadline = new Date(Date.parse('2020-07-10'));
 initializeClock('clockdiv', deadline);
     </script>
-  </head>
-  <body style="background-image: url(img/panda.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;">
-    <div id="clockdiv">
-  <div>
-    <span class="days"></span>
-    <div class="smalltext">Days</div>
-  </div>
-  <div>
-    <span class="hours"></span>
-    <div class="smalltext">Hours</div>
-  </div>
-  <div>
-    <span class="minutes"></span>
-    <div class="smalltext">Minutes</div>
-  </div>
-  <div>
-    <span class="seconds"></span>
-    <div class="smalltext">Seconds</div>
-  </div>
-</div>
   </body>
 </html>
