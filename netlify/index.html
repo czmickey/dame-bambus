@@ -39,7 +39,7 @@
       }
     </style>
   </head>
-  <body style="background-image: url(img/panda.jpg);
+  <body style="background-image: url(img/panda-21.jpeg);
     background-repeat: no-repeat;
     background-size: cover;">
     <h1>Dáme bambus? 🐼 Odjezd za...</h1>
@@ -79,6 +79,8 @@
 }
 
 function initializeClock(id, endtime) {
+  let timeinterval = null;
+
   const clock = document.getElementById(id);
   const daysSpan = clock.querySelector('.days');
   const hoursSpan = clock.querySelector('.hours');
@@ -99,10 +101,10 @@ function initializeClock(id, endtime) {
   }
 
   updateClock();
-  const timeinterval = setInterval(updateClock, 1000);
+  timeinterval = setInterval(updateClock, 1000);
 }
 
-const deadline = new Date(Date.parse('2020-07-10 09:00:00'));
+const deadline = new Date(Date.parse('2021-07-02 07:00:00'));
 initializeClock('clockdiv', deadline);
     </script>
   </body>
